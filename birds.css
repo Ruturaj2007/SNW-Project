@@ -1,0 +1,418 @@
+/* --- Bird Care Page Specific Styles --- */
+
+.bird-body {
+    font-family: var(--font-display);
+    background-color: var(--background-light);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* overflow-x-hidden */
+}
+
+.bird-page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* group/design-root overflow-x-hidden */
+}
+
+.bird-layout-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%; /* flex-1 */
+    height: 100%; /* h-full */
+}
+
+.bird-header {
+    position: sticky; /* sticky */
+    top: 0; /* top-0 */
+    z-index: 50; /* z-50 */
+    background-color: rgba(246, 248, 246, 0.8); /* bg-background-light/80 */
+    backdrop-filter: blur(4px); /* backdrop-blur-sm */
+}
+
+.bird-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 0.75rem 1rem; /* px-4 py-3 */
+    border-bottom: 1px solid #e7f3e7; /* border-b border-solid border-[#e7f3e7] */
+}
+
+@media (min-width: 640px) {
+    .bird-header-container {
+        padding: 0.75rem 2rem; /* sm:px-8 */
+    }
+}
+
+@media (min-width: 768px) {
+    .bird-header-container {
+        padding: 0.75rem 3rem; /* md:px-12 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .bird-header-container {
+        padding: 0.75rem 5rem; /* lg:px-20 */
+    }
+}
+
+@media (min-width: 1280px) {
+    .bird-header-container {
+        padding: 0.75rem 10rem; /* xl:px-40 */
+    }
+}
+
+.bird-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+    color: #0e1b0e; /* text-[#0e1b0e] */
+}
+
+.bird-logo-icon {
+    width: 1.5rem; /* size-6 */
+    height: 1.5rem;
+    color: var(--primary); /* text-primary */
+}
+
+.bird-header-title {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: bold;
+    line-height: 1.25; /* leading-tight */
+    letter-spacing: -0.015em; /* tracking-[-0.015em] */
+}
+
+.bird-nav-section {
+    display: none; /* hidden md:flex */
+    align-items: center;
+    justify-content: flex-end; /* justify-end */
+    gap: 2rem; /* gap-8 */
+}
+
+.bird-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem; /* gap-9 */
+}
+
+.bird-nav-link {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    line-height: 1.5; /* leading-normal */
+    color: #0e1b0e; /* text-[#0e1b0e] */
+    transition: color 0.3s ease;
+}
+
+.bird-nav-link:hover {
+    color: var(--primary); /* hover:text-primary */
+}
+
+.bird-nav-link-active {
+    font-weight: bold; /* font-bold */
+    color: var(--primary); /* text-primary */
+}
+
+.bird-nav-buttons {
+    display: flex;
+    gap: 0.5rem; /* gap-2 */
+}
+
+.bird-contact-button {
+    display: inline-flex; /* flex inline-flex */
+    align-items: center;
+    justify-content: center;
+    min-width: 84px; /* min-w-[84px] */
+    max-width: 480px; /* max-w-[480px] */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem; /* rounded-lg */
+    height: 2.5rem; /* h-10 */
+    padding: 0 1rem; /* px-4 */
+    background-color: var(--primary); /* bg-primary */
+    color: #0e1b0e; /* text-[#0e1b0e] */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: bold;
+    line-height: 1.5; /* leading-normal */
+    letter-spacing: 0.015em; /* tracking-[0.015em] */
+    border: none;
+    transition: background-color 0.3s ease; /* hover:bg-opacity-80 (simulated) */
+}
+
+.bird-contact-button:hover {
+    background-color: #14b814; /* Slightly darker green */
+}
+
+.bird-search-button {
+    display: inline-flex; /* flex inline-flex */
+    align-items: center;
+    justify-content: center;
+    max-width: 480px; /* max-w-[480px] */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem; /* rounded-lg */
+    height: 2.5rem; /* h-10 */
+    background-color: #e7f3e7; /* bg-[#e7f3e7] */
+    color: #0e1b0e; /* text-[#0e1b0e] */
+    gap: 0.5rem; /* gap-2 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: bold;
+    line-height: 1.5; /* leading-normal */
+    letter-spacing: 0.015em; /* tracking-[0.015em] */
+    min-width: 0; /* min-w-0 */
+    padding: 0 0.625rem; /* px-2.5 */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.bird-search-button:hover {
+    background-color: #d0e7d0; /* hover:bg-[#d0e7d0] */
+}
+
+.bird-nav-toggle {
+    display: block; /* md:hidden */
+}
+
+.bird-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem; /* h-10 */
+    width: 2.5rem; /* w-10 */
+    background-color: #e7f3e7; /* bg-[#e7f3e7] */
+    color: #0e1b0e; /* text-[#0e1b0e] */
+    border-radius: 0.5rem; /* rounded-lg */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bird-menu-btn:hover {
+    background-color: #d0e7d0; /* hover:bg-[#d0e7d0] */
+}
+
+.bird-main {
+    padding: 2.5rem 1rem; /* px-4 py-10 */
+    display: flex;
+    flex: 1; /* flex-1 */
+    justify-content: center; /* justify-center */
+}
+
+@media (min-width: 768px) {
+    .bird-main {
+        padding: 4rem 1rem; /* md:py-16 */
+    }
+}
+
+@media (min-width: 640px) {
+    .bird-main {
+        padding: 2.5rem 2rem; /* sm:px-8 */
+    }
+}
+
+@media (min-width: 768px) {
+    .bird-main {
+        padding: 2.5rem 3rem; /* md:px-12 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .bird-main {
+        padding: 2.5rem 5rem; /* lg:px-20 */
+    }
+}
+
+@media (min-width: 1280px) {
+    .bird-main {
+        padding: 2.5rem 10rem; /* xl:px-40 */
+    }
+}
+
+.bird-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px; /* max-w-[960px] */
+    flex: 1; /* flex-1 */
+    width: 100%; /* w-full */
+    gap: 2rem; /* gap-8 */
+}
+
+@media (min-width: 768px) {
+    .bird-content-wrapper {
+        gap: 3rem; /* md:gap-12 */
+    }
+}
+
+.bird-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem; /* gap-8 */
+}
+
+.bird-intro-section {
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap */
+    justify-content: center; /* justify-center */
+    gap: 0.75rem; /* gap-3 */
+    padding: 1rem; /* p-4 */
+    text-align: center; /* text-center */
+}
+
+.bird-main-title {
+    color: var(--primary); /* text-primary */
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 900; /* font-black */
+    line-height: 1.25; /* leading-tight */
+    letter-spacing: -0.033em; /* tracking-[-0.033em] */
+}
+
+@media (min-width: 768px) {
+    .bird-main-title {
+        font-size: 3rem; /* md:text-5xl */
+    }
+}
+
+.bird-hero-image-container {
+    width: 100%;
+    border-radius: 0.5rem; /* rounded-xl */
+    overflow: hidden; /* overflow-hidden */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+.bird-hero-image {
+    width: 100%;
+    height: auto; /* h-auto */
+    object-fit: cover; /* object-cover */
+    aspect-ratio: 2 / 1; /* aspect-[2/1] */
+}
+
+.bird-content-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /* p-4 */
+    gap: 1.5rem; /* gap-6 */
+}
+
+.bird-content-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem; /* rounded-xl */
+    border: 1px solid #d0e7d0; /* border border-[#d0e7d0] */
+    background-color: #ffffff; /* bg-white */
+    padding: 1.5rem; /* p-6 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+@media (min-width: 768px) {
+    .bird-content-card {
+        border: 1px solid #2a3c2a; /* dark:border-[#2a3c2a] - Applied light version here */
+    }
+}
+
+.bird-card-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.bird-icon-text {
+    font-size: 1.875rem; /* text-3xl */
+    color: var(--primary); /* text-primary */
+}
+
+.bird-card-content {
+    /* Flex item properties are default */
+}
+
+.bird-card-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold;
+    color: var(--primary); /* text-primary */
+    margin-bottom: 0.5rem; /* mb-2 (approx) */
+}
+
+.bird-card-text {
+    color: #000000; /* text-black */
+    font-size: 1rem; /* text-base */
+    font-weight: normal; /* font-normal */
+    line-height: 1.625; /* leading-relaxed */
+}
+
+.bird-list {
+    list-style-type: disc; /* list-disc */
+    list-style-position: inside; /* list-inside */
+    color: #000000; /* text-black */
+    font-size: 1rem; /* text-base */
+    font-weight: normal; /* font-normal */
+    line-height: 1.625; /* leading-relaxed */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* space-y-2 */
+}
+
+.bird-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* gap-6 */
+    padding: 2.5rem 1.25rem; /* px-5 py-10 */
+    text-align: center; /* text-center */
+    border-top: 1px solid #e7f3e7; /* border-t border-solid border-[#e7f3e7] */
+}
+
+/* Container query simulation for footer links */
+@media (min-width: 480px) {
+    .bird-footer {
+        flex-direction: row;
+        justify-content: space-around; /* @[480px]:justify-around */
+    }
+}
+
+.bird-footer-links {
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap */
+    justify-content: center; /* justify-center */
+    align-items: center; /* items-center */
+    gap: 1.5rem; /* gap-6 */
+}
+
+.bird-footer-link {
+    color: #4e974e; /* text-[#4e974e] */
+    font-size: 1rem; /* text-base */
+    font-weight: normal; /* font-normal */
+    line-height: 1.5; /* leading-normal */
+    min-width: 10rem; /* min-w-40 */
+    transition: color 0.3s ease;
+}
+
+.bird-footer-link:hover {
+    color: var(--primary); /* hover:text-primary */
+}
+
+.bird-social-icons {
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap */
+    justify-content: center; /* justify-center */
+    gap: 1.5rem; /* gap-6 */
+}
+
+.bird-social-icon {
+    color: #4e974e; /* text-[#4e974e] */
+    transition: color 0.3s ease;
+}
+
+.bird-social-icon:hover {
+    color: var(--primary); /* hover:text-primary */
+}
+
+.bird-footer-text {
+    color: #4e974e; /* text-[#4e974e] */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: normal; /* font-normal */
+    line-height: 1.5; /* leading-normal */
+}
+
+/* --- End Bird Care Page Styles --- */
