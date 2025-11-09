@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,145 +7,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dog.css">
 </head>
-<body class="dog-body">
-    <div class="page-container">
-        <header class="dog-nav">
-            <div class="dog-nav-container">
-                <div class="dog-nav-brand">
-                    <svg class="dog-logo-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5zM12 12c-2.42 0-4.5 1.76-4.5 4.04 0 .91.31 1.75.83 2.45A8.01 8.01 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.48-.4 2.85-1.08 4.04.53-.7.83-1.54.83-2.45C16.5 13.76 14.42 12 12 12z"></path>
-                    </svg>
-                    <h1 class="dog-nav-title">PetCare</h1>
-                </div>
-                <nav class="dog-nav-menu">
-                    <a href="index.html" class="dog-nav-link">Home</a>
-                    <a href="cat.html" class="dog-nav-link">Cat Care</a>
-                    <a href="dog.html" class="dog-nav-link dog-nav-link-active">Dog Care</a>
-                    <a href="birds.html" class="dog-nav-link">Birds</a>
-                </nav>
-                <button class="dog-nav-toggle">
-                    <span class="dog-menu-icon">Menu</span>
-                </button>
-            </div>
-        </header>
+<body>
+    <header>
+        <div id="header">
+            <span id="logo"></span>
+            <h2>PetCare</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cat.html">Cat Care</a>
+                <a href="dog.html" id="currentLink">Dog Care</a>
+                <a href="birds.html">Birds</a>
+            </nav>
+        </div>
+    </header>
 
-        <main class="dog-main">
-            <div class="dog-content-bg">
-                <div class="container">
-                    <div class="dog-content-card">
-                        <div class="dog-hero-section">
-                            <div class="dog-hero-text">
-                                <h1 class="dog-hero-title">Dog Care Tips</h1>
-                                <p class="dog-hero-subtitle">Everything you need to know to provide the best care for your canine companion.</p>
-                            </div>
-                            <img src="assets/images/golden-retriever-tongue-out.jpg" alt="A friendly golden retriever smiling in a bright, clean setting" class="dog-hero-image">
-                        </div>
+                <main>
+                    <section>
+                        <h1>Dog Care Tips: A Guide for a Happy and Healthy Canine</h1>
+                        <p>Everything you need to know to ensure your dog is happy, healthy, and thriving.</p>
+                    </section>
+                    <section>
+                        <img src='/images/golden-retriever-tongue-out.jpg' alt="A friendly golden retriever smiling in a bright, clean setting" style="width: 100%; height: auto; display: block;">
+                    </section>
+                    <section>
+                        <h2>Feeding Guidelines</h2>
+                        <p>Providing a balanced diet is crucial for your dog's health. Ensure you are feeding high-quality dog food appropriate for their age, size, and activity level.</p>
+                        <ul>
+                            <li><strong>Quality Food:</strong> Choose high-quality commercial dog food (wet or dry) that is appropriate for your dog's age and health status.</li>
+                            <li><strong>Portion Control:</strong> Follow the feeding guide on the packaging, but adjust as needed based on your dog's activity level and body condition to prevent obesity.</li>
+                            <li><strong>Fresh Water:</strong> Always provide access to fresh, clean water. Change it daily and ensure the bowl is clean.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Grooming and Hygiene</h2>
+                        <p>Regular grooming keeps your dog's coat and skin healthy. Here are the basics:</p>
+                        <ul>
+                            <li><strong>Brushing:</strong> Regular brushing removes loose hair, dirt, and prevents matting. The frequency depends on your dog's coat type.</li>
+                            <li><strong>Bathing:</strong> Bathe your dog as needed, but not too often, as it can strip natural oils from their skin. Use a dog-specific shampoo.</li>
+                            <li><strong>Nail Trimming:</strong> Overly long nails can be painful and cause issues. Trim them regularly, being careful not to cut the quick.</li>
+                            <li><strong>Dental Care:</strong> Brush your dog's teeth several times a week with dog-friendly toothpaste to prevent dental disease.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Exercise and Mental Stimulation</h2>
+                        <p>A tired dog is a happy dog. Daily exercise helps manage weight, reduce behavioral problems, and strengthen your bond.</p>
+                        <ul>
+                            <li><strong>Daily Exercise:</strong> Most dogs need at least 30-60 minutes of physical activity per day. This can include walks, runs, or playtime in the yard.</li>
+                            <li><strong>Mental Stimulation:</strong> Engage your dog's mind with puzzle toys, training sessions, and games like hide-and-seek to prevent boredom and anxiety.</li>
+                            <li><strong>Socialization:</strong> Regular interaction with other dogs and people helps maintain your dog's social skills and prevents behavioral issues.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Health Warning Signs</h2>
+                        <p>Be observant of your dog's behavior and physical condition. Contact your vet if you notice any of the following signs:</p>
+                        <ul>
+                            <li>Significant changes in appetite or water consumption.</li>
+                            <li>Lethargy, unusual tiredness, or reluctance to play.</li>
+                            <li>Difficulty urinating, defecating, or changes in stool.</li>
+                            <li>Vomiting or diarrhea that lasts more than 24 hours.</li>
+                            <li>Persistent coughing, sneezing, or difficulty breathing.</li>
+                            <li>Lumps, bumps, or sores on the skin.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Common Questions</h2>
+                        <details>
+                            <summary>What are common mistakes new dog owners make?</summary>
+                            <p>
+                                Common mistakes include inconsistent training, which can confuse your dog; lack of socialization during puppyhood, leading to behavioral issues; ignoring regular veterinary check-ups for preventative care; and humanizing dog behavior, which can lead to misunderstanding and ineffective training.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>How often should I take my dog to the vet?</summary>
+                            <p>
+                                Puppies should visit the vet every 3-4 weeks until they're 16 weeks old for vaccinations and check-ups. Adult dogs should have an annual wellness exam, and senior dogs (7+ years) should visit every 6 months. Always consult your veterinarian for a schedule tailored to your dog's needs.
+                            </p>
+                        </details>
+                    </section>
+                    <p><a href="index.html">Back to All Tips</a></p>
+                </main>
 
-                        <div class="dog-content-sections">
-                            <section class="dog-content-section">
-                                <div class="dog-section-icon">
-                                    <span class="dog-icon-text">🍽️</span> <!-- Using emoji as icon placeholder -->
-                                </div>
-                                <div class="dog-section-content">
-                                    <h2 class="dog-section-title">Feeding Guidelines</h2>
-                                    <div class="dog-section-text">
-                                        <p>Providing a balanced diet is crucial for your dog's health. Ensure you are feeding high-quality dog food appropriate for their age, size, and activity level. Always provide fresh, clean water. Portion control is key to preventing obesity, a common problem in dogs. Follow the feeding guide on the food packaging, but adjust as needed based on your dog's body condition.</p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="dog-content-section">
-                                <div class="dog-section-icon">
-                                    <span class="dog-icon-text">🛁</span> <!-- Using emoji as icon placeholder -->
-                                </div>
-                                <div class="dog-section-content">
-                                    <h2 class="dog-section-title">Grooming and Hygiene</h2>
-                                    <div class="dog-section-text">
-                                        <p>Regular grooming keeps your dog's coat and skin healthy. Here are the basics:</p>
-                                        <ul class="dog-list">
-                                            <li><strong>Brushing:</strong> Regular brushing removes loose hair, dirt, and prevents matting. The frequency depends on your dog's coat type.</li>
-                                            <li><strong>Bathing:</strong> Bathe your dog as needed, but not too often, as it can strip natural oils from their skin. Use a dog-specific shampoo.</li>
-                                            <li><strong>Nail Trimming:</strong> Overly long nails can be painful and cause issues. Trim them regularly, being careful not to cut the quick.</li>
-                                            <li><strong>Dental Care:</strong> Brush your dog's teeth several times a week with dog-friendly toothpaste to prevent dental disease.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="dog-content-section">
-                                <div class="dog-section-icon">
-                                    <span class="dog-icon-text">🏃</span> <!-- Using emoji as icon placeholder -->
-                                </div>
-                                <div class="dog-section-content">
-                                    <h2 class="dog-section-title">Exercise &amp; Mental Stimulation</h2>
-                                    <div class="dog-section-text">
-                                        <p>A tired dog is a happy dog. Daily exercise helps manage weight, reduce behavioral problems, and strengthen your bond. Most dogs need at least 30-60 minutes of physical activity per day. Mental stimulation is just as important. Engage your dog's mind with puzzle toys, training sessions, and games like hide-and-seek to prevent boredom and anxiety.</p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="dog-content-section">
-                                <div class="dog-section-icon">
-                                    <span class="dog-icon-text">⚠️</span> <!-- Using emoji as icon placeholder -->
-                                </div>
-                                <div class="dog-section-content">
-                                    <h2 class="dog-section-title">Health Warning Signs</h2>
-                                    <div class="dog-section-text">
-                                        <p>Be observant of your dog's behavior and physical condition. Contact your vet if you notice any of the following signs:</p>
-                                        <ul class="dog-list">
-                                            <li>Significant changes in appetite or water consumption.</li>
-                                            <li>Lethargy, unusual tiredness, or reluctance to play.</li>
-                                            <li>Difficulty urinating, defecating, or changes in stool.</li>
-                                            <li>Vomiting or diarrhea that lasts more than 24 hours.</li>
-                                            <li>Persistent coughing, sneezing, or difficulty breathing.</li>
-                                            <li>Lumps, bumps, or sores on the skin.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="dog-content-section">
-                                <div class="dog-section-icon">
-                                    <span class="dog-icon-text">🧠</span> <!-- Using emoji as icon placeholder -->
-                                </div>
-                                <div class="dog-section-content">
-                                    <h2 class="dog-section-title">Common Beginner Mistakes</h2>
-                                    <div class="dog-section-text">
-                                        <p>Avoid these common pitfalls to build a strong, positive relationship with your new dog:</p>
-                                        <ul class="dog-list">
-                                            <li><strong>Inconsistent Training:</strong> Dogs thrive on routine and clear rules. Ensure everyone in the household is consistent with commands and boundaries.</li>
-                                            <li><strong>Lack of Socialization:</strong> Proper socialization with other dogs and people during puppyhood is crucial for developing a well-behaved adult dog.</li>
-                                            <li><strong>Ignoring Vet Visits:</strong> Regular check-ups are essential for preventative care and catching health issues early.</li>
-                                            <li><strong>Humanizing Behavior:</strong> Attributing complex human emotions to dog behavior can lead to misunderstanding and ineffective training.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <div class="dog-cta-container">
-                                <a href="index.html" class="dog-cta-button">Back to All Tips</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="dog-footer">
-            <div class="container">
-                <div class="dog-footer-content">
-                    <p class="dog-footer-text">© 2024 PetCare. All Rights Reserved.</p>
-                    <div class="dog-footer-links">
-                        <a href="#" class="dog-footer-link">Privacy Policy</a>
-                        <a href="#" class="dog-footer-link">Terms of Service</a>
-                        <a href="#" class="dog-footer-link">Social Media</a> <!-- Placeholder link -->
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+                <footer>
+                    <p>Made By Ruturaj</p>
+                </footer>
 </body>
 </html>

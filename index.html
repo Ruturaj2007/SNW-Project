@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,105 +10,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-container">
-        <!-- TopNavBar -->
-        <header class="top-nav">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <div class="logo-icon">
-                        <!-- SVG Icon for PetCare -->
-                        <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h2 class="nav-title">PetCare Guide</h2>
-                </div>
-                <nav class="nav-menu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="dog.html" class="nav-link">Dogs</a>
-                    <a href="cat.html" class="nav-link">Cats</a>
-                    <a href="birds.html" class="nav-link">Birds</a>
-                </nav>
-                <div class="nav-toggle">
-                    <!-- Mobile menu button placeholder -->
-                    <button class="menu-btn">Menu</button>
-                </div>
-            </div>
-        </header>
+    <header>
+        <div id="header">
+            <span id="logo"></span>
+            <h2>PetCare</h2>
+            <nav>
+                <a href="index.html" id="homeLink">Home</a>
+                <a href="cat.html">Cat Care</a>
+                <a href="dog.html">Dog Care</a>
+                <a href="birds.html">Birds</a>
+            </nav>
+        </div>
+    </header>
 
-        <main class="main-content">
-            <div class="container">
-                <!-- HeroSection -->
-                <section class="hero-section">
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <h1 class="hero-title">Your go-to guide for happy, healthy pets.</h1>
-                            <h2 class="hero-subtitle">Providing the best care tips and advice for pet owners.</h2>
-                            <button class="cta-button">Get Started</button>
-                        </div>
-                        <div class="hero-image-container">
-                            <div class="hero-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBitax8_A8hotlCmN49a_qw_RW9hQRIBoYzremsQRxVA4DyLQDfX0qQpkullcML25T-h2HbsZ4SjhJCg_qza5T53w97WehD2rR2R9wrJ9Whyzg7CEQzw9gq1ODVfBY282oNxHKqhU4lNbhQ1A37wZIUVs8vuM8d4NqBxtkI29SoSp-xVlxrjCMeYQBpM6aC_M3UUQANZV_Z84A0ZeuaIp3IMAeLSXRuBCgZud-t6_65VJl0axM6EdeVKkvR_qiFB0Lkpf5gtmDUgOU');"></div>
-                        </div>
+                <main>
+                    <section>
+                        <h1>Your go-to guide for happy, healthy pets.</h1>
+                        <p>Providing the best care tips and advice for pet owners.</p>
+                    </section>
+                    <section style="background-image: url(/images/hero-image.jpg);"></section>
+                    <div id="main">
+                        <article>
+                            <div style="background-image: url(/images/dog-card.jpg);"></div>
+                            <div>
+                                <h3>All About Dogs</h3>
+                                <p>Explore comprehensive guides on dog care, from nutrition and training to grooming and health, ensuring your furry friend lives a long and happy life.</p>
+                                <a href="dog.html">View Dog Care Tips</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div style="background-image: url(./images/cat-card.jpg);"></div>
+                            <div>
+                                <h3>Feline Friends</h3>
+                                <p>Discover essential tips for cat care, including understanding their behavior, ensuring their health, and creating an enriching environment for them to thrive.</p>
+                                <a href="cat.html">View Cat Care Tips</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div style="background-image: url(/images/bird-card.jpg);"></div>
+                            <div>
+                                <h3>Avian Companions</h3>
+                                <p>Learn about proper bird care, covering everything from diet and cage setup to social interaction and identifying common health issues for various species.</p>
+                                <a href="birds.html">View Bird Care Tips</a>
+                            </div>
+                        </article>
                     </div>
-                </section>
+                </main>
 
-                <!-- Content Sections -->
-                <div class="content-grid">
-                    <!-- Card 1: Dogs -->
-                    <section class="content-card">
-                        <div class="card-content">
-                            <div class="card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkqPPU9F3F0M5M4qrLmfwzgd6oUzfkne1ZPk7t-kYUhMc4k0ZA6b_tqvLublXFV_Oq4WQPYEzP8oGwWztG-yuluO9x2vneX6qN44NwOzUaIr6tMIOz5F69DjTbFsnYhU9zXzhetYTKfgv8WtRxvi7ZviSmB__exeiq29xNI3l8XDSpzwhaOYVBj1Up03JeWLsvkcMd-Viej0x0jp9hxkVKJX6rbvXd2WJnBH739UTULljpA1c6ZM1ZRmMpk8gsAOfy695HM_G9r1c');"></div>
-                            <div class="card-text">
-                                <div class="text-content">
-                                    <h3 class="card-title">All About Dogs</h3>
-                                    <p class="card-description">Explore comprehensive guides on dog care, from nutrition and training to grooming and health, ensuring your furry friend lives a long and happy life.</p>
-                                </div>
-                                <a href="dog.html" class="card-link">View Dog Care Tips</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Card 2: Cats -->
-                    <section class="content-card">
-                        <div class="card-content reverse-layout">
-                            <div class="card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0trIspPB4FEwGJbwK9fvSibs52Q3po6xNrzgqwo0zKuGN95N7ffELirQbWK3hwK-MsFBGWmRUAz01FngjqNMnJTdaH4d4QyoeXv__BiqlQtJZWI6iVfAEpgv5Ycy64xgK0zyo6zumrjpJshgGusTfYaJh2kso0QLwRnGSXgnGPbYtXmdxJT2DUZ2Z8RZuqd-WXAdpZD3VJocHgtjWFPBi_RBLCbKIAaBnMkAi1kGpMZws3fRaLvfPXnfVwneyNUJ1gyv3d5ZfROY');"></div>
-                            <div class="card-text">
-                                <div class="text-content">
-                                    <h3 class="card-title">Feline Friends</h3>
-                                    <p class="card-description">Discover essential tips for cat care, including understanding their behavior, ensuring their health, and creating an enriching environment for them to thrive.</p>
-                                </div>
-                                <a href="cat.html" class="card-link">View Cat Care Tips</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Card 3: Birds -->
-                    <section class="content-card">
-                        <div class="card-content">
-                            <div class="card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvjkoKGsfYsOHlItJL4Y9NZ1dtuI_7xcUixZkwG8prs2335-aA0dT8EA0YZVkNSu5ZmQtKbUqXJWeCcR19jS79jqnZ0A6dI_WVm7WNHyX-pX_NyUZfaAvrXIrfRPXX-J6Nt0CV9QNhjmJUgluUenIbbXrmP2vtBQWadb_EzMnOaOZ3pfYAUO6LtRTqVVdneE6Mq2qmozvFsPaZwN0kFdzGyMyYXujYeFA_AEFPfTOQP6jBZ-6wXpdMgXOwY5Zocm8Yo9HFRr1moMI');"></div>
-                            <div class="card-text">
-                                <div class="text-content">
-                                    <h3 class="card-title">Avian Companions</h3>
-                                    <p class="card-description">Learn about proper bird care, covering everything from diet and cage setup to social interaction and identifying common health issues for various species.</p>
-                                </div>
-                                <a href="birds.html" class="card-link">View Bird Care Tips</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer-content">
-                    <p class="footer-text">© 2024 PetCare Guide. All Rights Reserved.</p>
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">Privacy Policy</a>
-                        <a href="#" class="footer-link">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+                <footer>
+                    <p>Made By Ruturaj</p>
+                </footer>
 </body>
 </html>
